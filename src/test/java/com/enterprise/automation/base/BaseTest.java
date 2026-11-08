@@ -1,3 +1,4 @@
+
 package com.enterprise.automation.base;
 
 import com.enterprise.automation.config.ConfigReader;
@@ -20,12 +21,14 @@ public class BaseTest {
         DriverManager.setDriver(driver);
 
         driver.manage().timeouts().implicitlyWait(
-                Duration.ofSeconds(
-                        ConfigReader.getIntProperty("timeout")));
+                Duration.ZERO
+        );
 
         driver.manage().timeouts().pageLoadTimeout(
                 Duration.ofSeconds(
-                        ConfigReader.getIntProperty("pageLoadTimeout")));
+                        ConfigReader.getIntProperty("pageLoadTimeout")
+                )
+        );
 
         driver.get(ConfigReader.getProperty("baseUrl"));
     }

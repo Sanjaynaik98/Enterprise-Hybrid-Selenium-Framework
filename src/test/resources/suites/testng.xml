@@ -1,3 +1,4 @@
+
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 <suite name="Enterprise Hybrid Selenium Framework">
@@ -5,8 +6,17 @@
     <test name="Framework and SauceDemo Tests">
 
         <classes>
+
             <class name="com.enterprise.automation.tests.FrameworkSetupTest"/>
+
             <class name="com.enterprise.automation.tests.SauceDemoLaunchTest"/>
+
+            <class name="com.enterprise.automation.tests.LoginTest"/>
+
+            <class name="com.enterprise.automation.tests.InventoryTest"/>
+
+            <class name="com.enterprise.automation.tests.CartTest"/>
+
         </classes>
 
     </test>
