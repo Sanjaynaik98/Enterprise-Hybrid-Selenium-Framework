@@ -22,12 +22,20 @@ public class LoginPage extends BasePage {
         super(driver);
     }
 
-    public InventoryPage login(String username, String password) {
+    public void submitCredentials(
+            String username,
+            String password) {
 
         actions.type(usernameField, username);
         actions.type(passwordField, password);
         actions.click(loginButton);
+    }
 
+    public InventoryPage login(
+            String username,
+            String password) {
+
+        submitCredentials(username, password);
         return new InventoryPage(driver);
     }
 

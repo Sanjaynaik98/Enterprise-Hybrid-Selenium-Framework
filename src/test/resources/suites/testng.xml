@@ -17,6 +17,8 @@
 
             <class name="com.enterprise.automation.tests.CartTest"/>
 
+            <class name="com.enterprise.automation.tests.LoginDataDrivenTest"/>
+
         </classes>
 
     </test>
