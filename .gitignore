@@ -1,0 +1,27 @@
+# Maven
+target/
+
+# IntelliJ
+.idea/
+*.iml
+out/
+
+# Logs
+logs/
+*.log
+
+# Reports
+reports/
+test-output/
+
+# Screenshots
+screenshots/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# OS files
+Thumbs.db
+.DS_Store

@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Enterprise Selenium Framework">
+
+    <test name="Framework Initialization">
+        <classes>
+            <class name="com.enterprise.automation.tests.FrameworkSetupTest"/>
+        </classes>
+    </test>
+
+</suite>
